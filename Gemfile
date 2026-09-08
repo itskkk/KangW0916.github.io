@@ -10,3 +10,7 @@ gem "jekyll-feed"
 
 # Platform dependencies
 gem "webrick", "~> 1.7"
+
+# Jekyll needs these gems on Windows when _config.yml specifies an IANA timezone.
+gem "tzinfo", "~> 2.0"
+gem "tzinfo-data"

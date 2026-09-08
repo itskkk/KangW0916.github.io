@@ -23,7 +23,7 @@
     <text class="num" x="68" y="65" text-anchor="middle">1</text>
     <text class="title" x="94" y="66">Content</text>
     <text class="line" x="54" y="104">Markdown + YAML config</text>
-    <text class="line" x="54" y="126">index &#183; publications &#183; hobbies</text>
+    <text class="line" x="54" y="126">index &#183; publications</text>
     <text class="line" x="54" y="148">photos &amp; paper thumbnails</text>
   </g>
   <line class="arrow" x1="278" y1="95" x2="320" y2="95" marker-end="url(#ah)"/>

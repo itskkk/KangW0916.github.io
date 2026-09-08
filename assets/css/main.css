@@ -723,15 +723,15 @@ p code {
   color: #800080;
 }
 .ne {
-  color: #990000;
+  color: #000000;
   font-weight: bold;
 }
 .nf {
-  color: #990000;
+  color: #000000;
   font-weight: bold;
 }
 .nl {
-  color: #990000;
+  color: #000000;
   font-weight: bold;
 }
 .nn {
@@ -911,11 +911,17 @@ svg:not(:root) {
   float: left;
   width: 100%;
 }
-/* .third class is now defined in the HOBBY PAGE STYLES section below (line ~553) with CSS Grid layout */
+/* Legacy gallery styles are retained only for compatibility with archived pages. */
 img.floatpic {
   float: right;
   margin-left: 1em;
   width: 25%;
+  padding: 4px;
+  border: 2px solid #011f5b;
+  border-radius: 12px;
+  box-sizing: border-box;
+  background: #ffffff;
+  box-shadow: 0 4px 14px rgba(1, 31, 91, 0.16);
 }
 
 /* Responsive image in 'About Me' page */
@@ -1006,15 +1012,6 @@ img.floatpic {
   line-height: 1;
   -webkit-font-smoothing: antialiased;
 }
-.icon-instagram,
-.icon-facebook,
-.icon-twitter,
-.icon-google-plus,
-.icon-feed,
-.icon-feed-2,
-.icon-linkedin,
-.icon-tumblr,
-.icon-lastfm,
 .icon-mail,
 .icon-github {
   font-family: "icomoon";
@@ -1025,33 +1022,6 @@ img.floatpic {
   text-transform: none;
   line-height: 1;
   -webkit-font-smoothing: antialiased;
-}
-.icon-instagram:before {
-  content: "\e004";
-}
-.icon-facebook:before {
-  content: "\e003";
-}
-.icon-twitter:before {
-  content: "\e007";
-}
-.icon-google-plus:before {
-  content: "\e00a";
-}
-.icon-feed:before {
-  content: "\e00b";
-}
-.icon-feed-2:before {
-  content: "\e00c";
-}
-.icon-linkedin:before {
-  content: "\e001";
-}
-.icon-tumblr:before {
-  content: "\e002";
-}
-.icon-lastfm:before {
-  content: "\e005";
 }
 .icon-mail:before {
   content: "\e006";
@@ -1721,6 +1691,9 @@ html {
   margin-left: 8.333333333333334%;
   margin-right: 8.333333333333334%;
 }
+.footer-wrap h6 {
+  text-align: center;
+}
 .related-articles {
   display: inline;
   float: left;
@@ -1757,29 +1730,6 @@ html {
 .footer-icons li a:hover {
   text-decoration: none;
   border-bottom: none;
-}
-.footer-icons li a:hover .icon-twitter,
-.footer-icons li a:hover .icon-twitter-sign {
-  color: #2aa9df;
-}
-.footer-icons li a:hover .icon-facebook,
-.footer-icons li a:hover .icon-facebook-sign {
-  color: #3a5a98;
-}
-.footer-icons li a:hover .icon-instagram,
-.footer-icons li a:hover .icon-instagram-sign {
-  color: #306088;
-}
-.footer-icons li a:hover .icon-google-plus,
-.footer-icons li a:hover .icon-google-plus-sign {
-  color: #b63324;
-}
-.footer-icons li a:hover .icon-lastfm,
-.footer-icons li a:hover .icon-lastfm-sign {
-  color: #d80049;
-}
-.footer-icons li a:hover .icon-github {
-  color: #4183c4;
 }
 .chrome-frame {
   background: #000;
@@ -2687,7 +2637,7 @@ img.mfp-img {
 }
 
 /* ============================================
-   Work Experience Timeline Styles
+   Education Experience Timeline Styles
    ============================================ */
 
 /* Timeline container */
@@ -2806,8 +2756,8 @@ img.mfp-img {
 }
 
 /* Quiet hover: nothing moves — the border picks up a faint
-   Penn-blue tint and a soft cool shadow blooms underneath.
-   (The transition lives in the PENN PALETTE block, which owns
+   blue tint and a soft cool shadow blooms underneath.
+   (The transition lives in the palette block, which owns
    the final `transition` list for this element.) */
 .timeline-card:hover {
   border-color: rgba(1, 31, 91, 0.22);
@@ -3216,744 +3166,6 @@ img.mfp-img {
 }
 
 /* ============================================
-   HOBBY PAGE STYLES
-   ============================================ */
-
-/* Hobby Section Container - Cohesive Spacing System */
-.hobby-section {
-  position: relative;
-  margin-bottom: 0;
-}
-
-/* First section (Personal Photos) - compact spacing to text below */
-.hobby-section:first-of-type {
-  margin-bottom: 3.5em;
-}
-
-/* Second section (Blues text) - minimal spacing to guitar */
-.hobby-section:nth-of-type(2) {
-  margin-bottom: 1.5em;
-}
-
-/* Guitar showcase flows naturally from quote */
-.guitar-showcase {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-/* Heading spacing - TIGHT connection to content */
-.hobby-section h2 {
-  padding-left: 0.3em;
-  position: relative;
-  margin-bottom: 0.6em;
-  margin-top: 0;
-  font-size: 1.8em;
-  line-height: 1.3;
-}
-
-.hobby-section h2::before {
-  content: "♪ ";
-  color: #808080;
-  margin-right: 0.5em;
-  font-size: 0.9em;
-}
-
-/* Personal Photos heading - same tight spacing */
-.hobby-section:first-of-type h2 {
-  font-size: 1.8em;
-  padding-left: 0.3em;
-  margin-bottom: 1.2em;
-}
-
-.hobby-section:first-of-type h2::before {
-  content: "📸 ";
-  color: #808080;
-  margin-right: 0.5em;
-  font-size: 0.9em;
-}
-
-/* Paragraph spacing - controlled rhythm */
-.hobby-section p {
-  margin-bottom: 1.2em;
-  margin-top: 0;
-}
-
-.hobby-section p:last-of-type {
-  margin-bottom: 0;
-}
-
-/* Enhanced Image Grid with Hover Effects - 3 images in a row */
-.third {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.5em;
-  margin: 1.2em 0 0 0;
-}
-
-/* Personal Photos Gallery - Asymmetric Layout */
-.photo-gallery {
-  display: grid;
-  grid-template-columns: 1.5fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  gap: 1.5em;
-  margin: 1.2em 0 0 0;
-  min-height: 500px;
-}
-
-.photo-featured {
-  grid-row: 1 / 3;
-  grid-column: 1;
-  position: relative;
-  border-radius: 4px;
-  overflow: hidden;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-  animation: fadeInUp 0.6s ease-out 0.1s backwards;
-}
-
-.photo-featured:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
-}
-
-.photo-featured img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.photo-featured:hover img {
-  transform: scale(1.03);
-}
-
-.photo-grid {
-  display: contents;
-}
-
-.photo-item {
-  position: relative;
-  border-radius: 4px;
-  overflow: hidden;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-  animation: fadeInUp 0.6s ease-out backwards;
-}
-
-.photo-item:nth-child(1) {
-  grid-row: 1;
-  grid-column: 2;
-  animation-delay: 0.2s;
-}
-
-.photo-item:nth-child(2) {
-  grid-row: 2;
-  grid-column: 2;
-  animation-delay: 0.3s;
-}
-
-.photo-item:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
-}
-
-.photo-item img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.photo-item:hover img {
-  transform: scale(1.03);
-}
-
-.image-container {
-  position: relative;
-  border-radius: 4px;
-  overflow: hidden;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-  animation: fadeInUp 0.6s ease-out;
-}
-
-.image-container:nth-child(1) {
-  animation-delay: 0.1s;
-}
-
-.image-container:nth-child(2) {
-  animation-delay: 0.2s;
-}
-
-.image-container:nth-child(3) {
-  animation-delay: 0.3s;
-}
-
-.image-container:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
-}
-
-.image-container img {
-  width: 100%;
-  height: auto;
-  display: block;
-  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.image-container:hover img {
-  transform: scale(1.03);
-}
-
-/* Image Caption Overlays */
-.image-caption {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
-  color: #ffffff;
-  padding: 1.5em 1em 1em;
-  transform: translateY(100%);
-  transition: transform 0.3s ease-in-out;
-}
-
-.image-container:hover .image-caption {
-  transform: translateY(0);
-}
-
-.caption-title {
-  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  font-weight: bold;
-  font-size: 1.1em;
-  margin-bottom: 0.3em;
-  letter-spacing: 0.5px;
-}
-
-.caption-description {
-  font-size: 0.9em;
-  opacity: 0.9;
-}
-
-/* Guitar Showcase Section */
-.guitar-showcase {
-  padding: 2em 0;
-  animation: fadeInUp 0.6s ease-out;
-  text-align: center;
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.guitar-showcase h2::before {
-  content: "🎸 ";
-  margin-right: 0.5em;
-}
-
-.guitar-tagline {
-  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  font-style: italic;
-  font-weight: normal;
-  color: #666666;
-  margin: 0 0 1.5em 0;
-  font-size: 1.1em;
-  letter-spacing: 1px;
-}
-
-.guitar-image-container {
-  border-radius: 4px;
-  overflow: hidden;
-  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.guitar-image-container:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
-}
-
-.guitar-image-container img {
-  width: 100%;
-  height: auto;
-  display: block;
-  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.guitar-image-container:hover img {
-  transform: scale(1.02);
-}
-
-/* ============================================
-   COOKING SECTION - Asymmetric Editorial Layout
-   ============================================ */
-
-.cooking-section {
-  margin-top: 4em;
-  animation: fadeInUp 0.6s ease-out;
-}
-
-.cooking-section h2::before {
-  content: "🍳 ";
-  margin-right: 0.5em;
-}
-
-.cooking-section p,
-.cooking-text-card {
-  max-width: 500px;
-  margin: 0 auto 2em;
-  padding: 20px 24px;
-  background: linear-gradient(135deg, #fafafa, #ffffff);
-  border-radius: 16px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-  text-align: center;
-  font-style: italic;
-  font-size: 0.95em;
-  line-height: 1.6;
-  color: #666;
-}
-
-/* Asymmetric Gallery Layout - Desktop */
-.cooking-gallery {
-  display: grid;
-  grid-template-columns: 1.5fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  gap: 1.5em;
-  margin: 2em 0;
-  min-height: 500px;
-}
-
-.cooking-featured {
-  grid-row: 1 / 3;
-  grid-column: 1;
-  position: relative;
-  border-radius: 6px;
-  overflow: hidden;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-  animation: fadeInUp 0.6s ease-out 0.1s backwards;
-}
-
-.cooking-featured:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
-}
-
-.cooking-featured img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.cooking-featured:hover img {
-  transform: scale(1.05);
-}
-
-.cooking-grid {
-  display: contents;
-}
-
-.cooking-item {
-  position: relative;
-  border-radius: 6px;
-  overflow: hidden;
-  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-  animation: fadeInUp 0.6s ease-out backwards;
-}
-
-.cooking-item:nth-child(1) {
-  grid-row: 1;
-  grid-column: 2;
-  animation-delay: 0.2s;
-}
-
-.cooking-item:nth-child(2) {
-  grid-row: 2;
-  grid-column: 2;
-  animation-delay: 0.3s;
-}
-
-.cooking-item:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
-}
-
-.cooking-item img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.cooking-item:hover img {
-  transform: scale(1.04);
-}
-
-/* Typography Enhancements */
-.artist-name {
-  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  font-weight: bold;
-  letter-spacing: 0.5px;
-}
-
-.hobby-quote {
-  font-style: italic;
-  font-size: 1.15em;
-  line-height: 1.7;
-  color: #666666;
-  text-align: center;
-  margin: 2em auto 0;
-  padding: 0 2em;
-  max-width: 700px;
-  position: relative;
-}
-
-.hobby-quote::before {
-  content: '"';
-  font-size: 3em;
-  color: #e0e0e0;
-  position: absolute;
-  left: -0.2em;
-  top: -0.3em;
-  font-family: Georgia, serif;
-}
-
-.hobby-quote::after {
-  content: '"';
-  font-size: 3em;
-  color: #e0e0e0;
-  position: absolute;
-  right: -0.2em;
-  bottom: -0.6em;
-  font-family: Georgia, serif;
-}
-
-/* This rule is now moved up with the other hobby-section styles */
-
-/* Scroll Animations */
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.hobby-section {
-  opacity: 0;
-  animation: fadeInUp 0.8s ease-out forwards;
-}
-
-/* Responsive: Tablet (481px - 768px) */
-@media only screen and (min-width: 481px) and (max-width: 768px) {
-  .third {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2em;
-  }
-
-  .hobby-section {
-    margin-bottom: 3em;
-  }
-
-  .guitar-showcase {
-    padding: 2em;
-  }
-}
-
-/* Responsive: Mobile (≤480px) - Pinterest-Style Masonry Board */
-@media only screen and (max-width: 480px) {
-  /* Prevent horizontal scroll on mobile */
-  html,
-  body {
-    overflow-x: hidden;
-    max-width: 100%;
-  }
-
-  body {
-    width: 100%;
-  }
-
-  /* Ensure navigation doesn't cause overflow */
-  /* clip, not hidden: hidden makes overflow-y compute to auto, turning #main
-     into a scroll container that swallows the first touch scroll on mobile */
-  .header-container,
-  .navigation-wrapper,
-  .top-navigation,
-  #main {
-    max-width: 100%;
-    overflow-x: clip;
-  }
-
-  /* ONLY apply Pinterest to Beyond Research page with unique wrapper */
-  .hobbies-pinterest-container {
-    column-count: 2;
-    column-gap: 12px;
-    padding: 0 8px;
-    width: 100%;
-    max-width: 100%;
-    overflow-x: hidden;
-    box-sizing: border-box;
-  }
-
-  .hobbies-pinterest-container .hobby-section {
-    display: contents;
-  }
-
-  /* Hide section headers on mobile - Pinterest style */
-  .hobbies-pinterest-container .hobby-section h2 {
-    display: none;
-  }
-
-  /* Ensure all images and content fit within columns */
-  .hobbies-pinterest-container img {
-    max-width: 100%;
-    height: auto;
-  }
-
-  .hobbies-pinterest-container * {
-    max-width: 100%;
-    box-sizing: border-box;
-  }
-
-  /* All content becomes Pinterest cards */
-  .hobby-section:first-of-type,
-  .hobby-section:nth-of-type(2) {
-    margin-bottom: 0;
-  }
-
-  /* Hide Blues Guitar verbose paragraphs - too much text */
-  .hobby-section:nth-of-type(3) p {
-    display: none;
-  }
-
-  /* Cooking text - COMPACT quote-style card */
-  .cooking-text-card {
-    display: block !important;
-    break-inside: avoid;
-    page-break-inside: avoid;
-    -webkit-column-break-inside: avoid;
-    background: #ffffff;
-    border-radius: 16px;
-    padding: 18px 16px;
-    margin-bottom: 20px !important;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    font-size: 0.8em;
-    line-height: 1.4;
-    text-align: center;
-    font-style: italic;
-    color: #666;
-    max-width: 100%;
-  }
-
-  /* Quote card - elegant and centered */
-  .hobby-quote {
-    display: block;
-    break-inside: avoid;
-    page-break-inside: avoid;
-    -webkit-column-break-inside: avoid;
-    background: linear-gradient(135deg, #fafafa, #ffffff);
-    border-radius: 16px;
-    padding: 24px 20px;
-    margin-bottom: 12px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-    font-size: 0.85em;
-    line-height: 1.5;
-    text-align: center;
-    border-left: none;
-    max-width: 100%;
-    font-style: italic;
-    color: #555;
-  }
-
-  .hobby-quote::before,
-  .hobby-quote::after {
-    display: none;
-  }
-
-  /* Hide guitar tagline on mobile - too much text */
-  .guitar-tagline {
-    display: none;
-  }
-
-  /* All grids become masonry-compatible */
-  .third,
-  .photo-gallery,
-  .cooking-gallery,
-  .cooking-grid,
-  .photo-grid {
-    display: contents;
-  }
-
-  /* Universal Pinterest image card style */
-  .image-container,
-  .photo-item,
-  .cooking-item {
-    break-inside: avoid;
-    page-break-inside: avoid;
-    -webkit-column-break-inside: avoid;
-    background: #ffffff;
-    border-radius: 16px;
-    overflow: hidden;
-    margin-bottom: 12px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s ease;
-  }
-
-  /* Featured images - LARGER for visual hierarchy */
-  .photo-featured,
-  .cooking-featured {
-    break-inside: avoid;
-    page-break-inside: avoid;
-    -webkit-column-break-inside: avoid;
-    background: #ffffff;
-    border-radius: 20px;
-    overflow: hidden;
-    margin-bottom: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
-  }
-
-  /* Guitar image - medium emphasis */
-  .guitar-image-container {
-    break-inside: avoid;
-    page-break-inside: avoid;
-    -webkit-column-break-inside: avoid;
-    background: #ffffff;
-    border-radius: 18px;
-    overflow: hidden;
-    margin-bottom: 12px;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.11);
-  }
-
-  /* Subtle tap feedback */
-  .image-container:active,
-  .photo-item:active,
-  .cooking-item:active {
-    transform: scale(0.98);
-  }
-
-  .photo-featured:active,
-  .cooking-featured:active,
-  .guitar-image-container:active {
-    transform: scale(0.99);
-  }
-
-  /* Images fill card naturally - no forced aspect ratio */
-  .image-container img,
-  .photo-featured img,
-  .photo-item img,
-  .cooking-featured img,
-  .cooking-item img,
-  .guitar-image-container img {
-    width: 100%;
-    height: auto;
-    display: block;
-  }
-
-  /* Disable all lightbox on mobile */
-  .image-container a,
-  .photo-featured a,
-  .photo-item a,
-  .cooking-featured a,
-  .cooking-item a,
-  .guitar-image-container a {
-    cursor: default !important;
-    pointer-events: none !important;
-    display: block;
-  }
-
-  /* Minimal, elegant captions */
-  .image-caption {
-    position: static;
-    transform: translateY(0);
-    background: transparent;
-    padding: 10px 14px 12px;
-    margin: 0;
-  }
-
-  .caption-title {
-    color: #666;
-    font-size: 0.75em;
-    font-weight: 500;
-    line-height: 1.3;
-    letter-spacing: 0.3px;
-  }
-
-  /* Hide caption description if exists */
-  .caption-description {
-    display: none;
-  }
-
-  /* Remove section containers - everything flows */
-  .guitar-showcase {
-    padding: 0;
-    margin: 0;
-    text-align: left;
-    max-width: 100%;
-    background: transparent;
-  }
-
-  /* Artist names styled within text cards */
-  .artist-name {
-    font-size: 1em;
-    font-weight: 600;
-    color: #343434;
-  }
-
-  /* Cooking gallery flows into masonry */
-  .cooking-section {
-    margin: 0;
-    padding: 0;
-  }
-
-  .cooking-gallery {
-    display: contents;
-  }
-
-  .cooking-grid {
-    display: contents;
-  }
-}
-
-/* Accessibility: Respect reduced motion preferences */
-@media (prefers-reduced-motion: reduce) {
-  .image-container,
-  .hobby-section,
-  .guitar-showcase,
-  .cooking-section,
-  .cooking-featured,
-  .cooking-item,
-  .photo-featured,
-  .photo-item {
-    animation: none;
-  }
-
-  .image-container:hover,
-  .guitar-image-container:hover,
-  .cooking-featured:hover,
-  .cooking-item:hover,
-  .photo-featured:hover,
-  .photo-item:hover {
-    transform: none;
-  }
-
-  .image-container:hover img,
-  .cooking-featured:hover img,
-  .cooking-item:hover img,
-  .photo-featured:hover img,
-  .photo-item:hover img {
-    transform: none;
-  }
-}
-
-/* ============================================
    DARK MODE — TOGGLE SWITCH (header widget)
    ============================================ */
 
@@ -4048,7 +3260,7 @@ input.switch__input {
   background-color: hsl(0, 0%, 100%);
   border-radius: 0.75em;
   box-shadow:
-    0 0 0 0.0625em rgba(153, 0, 0, 0),
+    0 0 0 0.0625em rgba(0, 0, 0, 0),
     0 0.125em 0.5em rgba(1, 31, 91, 0.15);
   outline: transparent;
   width: 2.75em;
@@ -4099,7 +3311,7 @@ input.switch__input:checked ~ .switch__inner-icons .switch__icon:nth-of-type(2) 
 
 input.switch__input:focus-visible {
   box-shadow:
-    0 0 0 0.0625em #990000,
+    0 0 0 0.0625em #000000,
     0 0.125em 0.5em rgba(1, 31, 91, 0.15);
 }
 
@@ -4180,6 +3392,12 @@ body,
 [data-theme="dark"] body {
   background-color: #14141a;
   color: #d4d4dc;
+}
+
+[data-theme="dark"] img.floatpic {
+  border-color: #6ea8ff;
+  background: #14141a;
+  box-shadow: 0 4px 14px rgba(110, 168, 255, 0.2);
 }
 
 [data-theme="dark"] h1,
@@ -4267,12 +3485,13 @@ body,
   background: transparent;
 }
 
-/* Swap to the reverse (white) Penn lockup in dark mode */
+/* Use a light logo treatment in dark mode */
 [data-theme="dark"] .logo--light {
   display: none;
 }
 [data-theme="dark"] .logo--dark {
   display: block;
+  filter: brightness(0) invert(1);
 }
 
 [data-theme="dark"] .header-nav a {
@@ -4459,52 +3678,6 @@ body,
   background: #34d399;
 }
 
-/* --- Hobbies / Cooking / Guitar --- */
-[data-theme="dark"] .cooking-text-card {
-  background: linear-gradient(135deg, #1c1c22, #24242c);
-  color: #a8a8b4;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
-}
-
-[data-theme="dark"] .hobby-quote {
-  color: #a8a8b4;
-}
-
-[data-theme="dark"] .hobby-quote::before,
-[data-theme="dark"] .hobby-quote::after {
-  color: rgba(255, 255, 255, 0.1);
-}
-
-[data-theme="dark"] .guitar-tagline {
-  color: #a8a8b4;
-}
-
-[data-theme="dark"] .artist-name {
-  color: #f0f0f4;
-}
-
-[data-theme="dark"] .hobby-section h2::before {
-  color: #6c6c78;
-}
-
-[data-theme="dark"] .image-container,
-[data-theme="dark"] .photo-featured,
-[data-theme="dark"] .photo-item,
-[data-theme="dark"] .cooking-featured,
-[data-theme="dark"] .cooking-item,
-[data-theme="dark"] .guitar-image-container {
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
-}
-
-[data-theme="dark"] .image-container:hover,
-[data-theme="dark"] .photo-featured:hover,
-[data-theme="dark"] .photo-item:hover,
-[data-theme="dark"] .cooking-featured:hover,
-[data-theme="dark"] .cooking-item:hover,
-[data-theme="dark"] .guitar-image-container:hover {
-  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.55);
-}
-
 /* --- Mobile contact panel --- */
 [data-theme="dark"] .mobile-contact-panel {
   background: #1c1c22;
@@ -4602,7 +3775,7 @@ body,
 
 [data-theme="dark"] input.switch__input:focus-visible {
   box-shadow:
-    0 0 0 0.0625em #e5484d,
+    0 0 0 0.0625em #f5f5f7,
     0 0.125em 0.5em rgba(0, 0, 0, 0.4);
 }
 
@@ -4630,7 +3803,7 @@ body,
 
 /* ============================================
    Type system: EB Garamond display headings
-   + clean Apple/system sans for reading text.
+   + clean system sans for reading text.
    (Header nav keeps its own Roboto declaration.)
    ============================================ */
 h1, h2, h3, h4, h5, h6,
@@ -4638,9 +3811,9 @@ h1, h2, h3, h4, h5, h6,
 .article-wrap h4, .article-wrap h5, .article-wrap h6 {
   font-family: "EB Garamond", Georgia, "Times New Roman", serif;
   letter-spacing: 0;
-  color: #011f5b; /* Penn blue */
+  color: #011f5b; /* USTC blue */
 }
-/* Penn blue is too dark on the dark background — keep dark headings readable */
+/* USTC blue is too dark on the dark background — keep dark headings readable */
 [data-theme="dark"] h1, [data-theme="dark"] h2, [data-theme="dark"] h3,
 [data-theme="dark"] h4, [data-theme="dark"] h5, [data-theme="dark"] h6,
 [data-theme="dark"] .article-wrap h1, [data-theme="dark"] .article-wrap h2,
@@ -4659,13 +3832,13 @@ body,
 }
 
 /* ============================================
-   PENN PALETTE
+   BLUE-BLACK PALETTE
    Blue #011f5b = structure (links, lines, tags)
-   Red  #990000 = sparing accents (hover, marks)
-   Dark-mode tints: blue #6ea8ff / red #e5484d
+   Black #000000 = sparing accents (hover, marks)
+   Dark-mode tints: blue #6ea8ff / light gray #f5f5f7
    ============================================ */
 
-/* --- Section headings: short Penn-red underline bar --- */
+/* --- Section headings: short black underline bar --- */
 .article-wrap h1::after,
 .article-wrap h2::after {
   content: "";
@@ -4674,14 +3847,14 @@ body,
   height: 3px;
   margin-top: 10px;
   border-radius: 2px;
-  background: #990000;
+  background: #000000;
 }
 [data-theme="dark"] .article-wrap h1::after,
 [data-theme="dark"] .article-wrap h2::after {
-  background: #e5484d;
+  background: #f5f5f7;
 }
 
-/* --- Prose links: Penn blue at rest, Penn red on hover --- */
+/* --- Prose links: blue at rest, black on hover --- */
 .article-wrap p > a,
 .article-wrap li > a {
   color: #011f5b;
@@ -4689,8 +3862,8 @@ body,
 }
 .article-wrap p > a:hover,
 .article-wrap li > a:hover {
-  color: #990000;
-  border-bottom: 1px solid rgba(153, 0, 0, 0.45);
+  color: #000000;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.45);
 }
 [data-theme="dark"] .article-wrap p > a,
 [data-theme="dark"] .article-wrap li > a {
@@ -4699,8 +3872,8 @@ body,
 }
 [data-theme="dark"] .article-wrap p > a:hover,
 [data-theme="dark"] .article-wrap li > a:hover {
-  color: #e5484d;
-  border-bottom: 1px solid rgba(229, 72, 77, 0.5);
+  color: #f5f5f7;
+  border-bottom: 1px solid rgba(245, 245, 247, 0.5);
 }
 /* Dark mode paints <strong> near-white; bold text inside a link
    must keep the link color (e.g. paper titles in News cards) */
@@ -4709,17 +3882,17 @@ body,
   color: inherit;
 }
 
-/* --- Horizontal rules: faint Penn-blue tint (light only) --- */
+/* --- Horizontal rules: faint blue tint (light only) --- */
 hr {
   border-top-color: rgba(1, 31, 91, 0.18);
 }
 
 /* --- Timeline: keep the original "light-up" glow language,
-       recolored into the Penn family. Ring lights up in a
-       brighter Penn-blue tone; the progress line runs Penn red
-       (current, at the top) into Penn blue (the past). --- */
+       recolored into the blue-black family. Ring lights up in a
+       brighter blue tone; the progress line runs black
+       (current, at the top) into USTC blue (the past). --- */
 .timeline-progress {
-  background: linear-gradient(to bottom, #990000, #011f5b 140px);
+  background: linear-gradient(to bottom, #000000, #011f5b 140px);
 }
 /* This element's `transition` is contested earlier in the file
    (the dark-mode theme block overrides the component one), so the
@@ -4753,31 +3926,31 @@ hr {
 }
 .timeline-company a:hover,
 .timeline-details a:hover {
-  color: #990000;
+  color: #000000;
 }
-/* Current role: a slow heartbeat — one red ripple every 2.8s,
+/* Current role: a slow heartbeat — one black ripple every 2.8s,
    with a rest beat. The only continuously-moving element on the
    page, marking "Present". */
-@keyframes penn-dot-pulse {
+@keyframes timeline-dot-pulse {
   0% {
     box-shadow:
-      0 0 0 4px rgba(220, 38, 38, 0.15),
-      0 0 0 4px rgba(220, 38, 38, 0.3);
+      0 0 0 4px rgba(0, 0, 0, 0.15),
+      0 0 0 4px rgba(0, 0, 0, 0.3);
   }
   70%,
   100% {
     box-shadow:
-      0 0 0 4px rgba(220, 38, 38, 0.15),
-      0 0 0 15px rgba(220, 38, 38, 0);
+      0 0 0 4px rgba(0, 0, 0, 0.15),
+      0 0 0 15px rgba(0, 0, 0, 0);
   }
 }
 .timeline-item--current.in-view .timeline-dot {
-  border-color: #990000;
-  box-shadow: 0 0 0 4px rgba(220, 38, 38, 0.15);
-  animation: penn-dot-pulse 2.8s cubic-bezier(0.22, 0.61, 0.36, 1) infinite;
+  border-color: #000000;
+  box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.15);
+  animation: timeline-dot-pulse 2.8s cubic-bezier(0.22, 0.61, 0.36, 1) infinite;
 }
 [data-theme="dark"] .timeline-progress {
-  background: linear-gradient(to bottom, #e5484d, #6ea8ff 140px);
+  background: linear-gradient(to bottom, #f5f5f7, #6ea8ff 140px);
 }
 [data-theme="dark"] .timeline-item.in-view .timeline-dot {
   box-shadow:
@@ -4793,25 +3966,39 @@ hr {
 }
 [data-theme="dark"] .timeline-company a:hover,
 [data-theme="dark"] .timeline-details a:hover {
-  color: #e5484d;
+  color: #f5f5f7;
 }
-@keyframes penn-dot-pulse-dark {
+@keyframes timeline-dot-pulse-dark {
   0% {
     box-shadow:
-      0 0 0 4px rgba(229, 72, 77, 0.18),
-      0 0 0 4px rgba(229, 72, 77, 0.32);
+      0 0 0 4px rgba(245, 245, 247, 0.18),
+      0 0 0 4px rgba(245, 245, 247, 0.32);
   }
   70%,
   100% {
     box-shadow:
-      0 0 0 4px rgba(229, 72, 77, 0.18),
-      0 0 0 15px rgba(229, 72, 77, 0);
+      0 0 0 4px rgba(245, 245, 247, 0.18),
+      0 0 0 15px rgba(245, 245, 247, 0);
   }
 }
 [data-theme="dark"] .timeline-item--current.in-view .timeline-dot {
-  border-color: #e5484d;
-  box-shadow: 0 0 0 4px rgba(229, 72, 77, 0.18);
-  animation: penn-dot-pulse-dark 2.8s cubic-bezier(0.22, 0.61, 0.36, 1) infinite;
+  border-color: #f5f5f7;
+  box-shadow: 0 0 0 4px rgba(245, 245, 247, 0.18);
+  animation: timeline-dot-pulse-dark 2.8s cubic-bezier(0.22, 0.61, 0.36, 1) infinite;
+}
+
+/* Education-specific logo borders */
+.timeline-item--ustc.in-view .timeline-dot {
+  border-color: #004098;
+}
+.timeline-item--hunan.in-view .timeline-dot {
+  border-color: #c62828;
+}
+[data-theme="dark"] .timeline-item--ustc.in-view .timeline-dot {
+  border-color: #6ea8ff;
+}
+[data-theme="dark"] .timeline-item--hunan.in-view .timeline-dot {
+  border-color: #ef6b73;
 }
 @media (prefers-reduced-motion: reduce) {
   .timeline-item--current.in-view .timeline-dot,
@@ -4820,7 +4007,7 @@ hr {
   }
 }
 
-/* --- News tags: publication blue, milestone red --- */
+/* --- News tags: publication blue, milestone black --- */
 .news-tag--publication {
   color: #011f5b;
 }
@@ -4828,21 +4015,21 @@ hr {
   background: #011f5b;
 }
 .news-tag--milestone {
-  color: #990000;
+  color: #000000;
 }
 .news-tag--milestone::before {
-  background: #990000;
+  background: #000000;
 }
 [data-theme="dark"] .news-tag--milestone {
-  color: #e5484d;
+  color: #f5f5f7;
 }
 [data-theme="dark"] .news-tag--milestone::before {
-  background: #e5484d;
+  background: #f5f5f7;
 }
 
-/* --- Publications: blue identity, red hover --- */
+/* --- Publications: blue identity, black hover --- */
 .publication-title a:hover {
-  color: #990000;
+  color: #000000;
 }
 .author-highlight {
   color: #011f5b;
@@ -4856,19 +4043,19 @@ hr {
   color: #ffffff;
 }
 [data-theme="dark"] .publication-title a:hover {
-  color: #e5484d;
+  color: #f5f5f7;
 }
 
-/* --- Header (dark): hover/current match light-mode Penn red --- */
+/* --- Header (dark): use a light accent for contrast --- */
 [data-theme="dark"] .header-nav a:hover,
 [data-theme="dark"] .header-nav a.is-current {
-  color: #e5484d;
+  color: #6ea8ff;
 }
 [data-theme="dark"] .header-social__link:hover {
-  color: #e5484d;
+  color: #f5f5f7;
 }
 
-/* --- Recruiting banner: #990000 is unreadable on dark --- */
-[data-theme="dark"] .article-wrap font[color="#990000"] {
-  color: #e5484d;
+/* --- Recruiting banner: black in light mode, light in dark mode --- */
+[data-theme="dark"] .article-wrap font[color="#000000"] {
+  color: #f5f5f7;
 }

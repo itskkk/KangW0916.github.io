@@ -4,88 +4,43 @@ layout: page
 
 # About Me
 
-<img src="/images/dengsiming.jpg" class="floatpic">
+<img src="/images/personal-photo.jpg" class="floatpic">
 
-Here is **Siming Deng (Larry Deng)**.<br>
+Here is **Chris Wang (王康)**.<br>
 
-I am a graduate student in the Department of [Electrical and Systems Engineering (ESE)](https://www.ese.upenn.edu/) at the [Penn Engineering](https://www.seas.upenn.edu/) of the **University of Pennsylvania**. Currently, I build **agentic AI tools and infrastructure** for iPhone hardware testing, spanning agent runtimes (multi-agent orchestration and tool use), on-device inference with **Apple MLX**, closed-loop test optimization, and **Vision Transformers** for distribution diagnosis. Broadly, my interests lie at the intersection of **AI infrastructure, applied ML, and hardware systems**. Prior to joining Penn, I gained valuable research experiences as a Research Assistant at Shenzhen University under the supervision of [Dr. Jun Zhang](https://www.researchgate.net/profile/Jun_Zhang93). My work focused on **Nonparametric Statistics**, **Distortion Measurement Error Models**, and **Large Sample Theory**. I developed and analyzed advanced statistical methods, conducted large-scale simulations, and applied these techniques to real-world datasets, resulting in five SCI publications.<br>
+I am a PhD student in the [Department of Modern Mechanics](https://ses.ustc.edu.cn/) at the **University of Science and Technology of China**. Currently, I am studying and researching in the *Computational Mechanics and Engineering Laboratory (CME)* under the guidance of *[Professor Yinbo Zhu](https://scholar.google.com.hk/citations?hl=zh-CN&user=0IIXHuMAAAAJ)* and *[Professor Hengan Wu](https://scholar.google.com.hk/citations?hl=zh-CN&user=X4lTQbMAAAAJ)*. My research focuses on the design and nano-mechanics of amorphous carbon, with an emphasis on material structure design and computational materials science.<br>
 
-## Work Experience
+## Education Experience
 
 <div class="timeline">
   <div class="timeline-progress" id="timeline-progress"></div>
 
-  <div class="timeline-item timeline-item--current">
+  <div class="timeline-item timeline-item--current timeline-item--ustc">
     <div class="timeline-dot" style="background: #ffffff;">
-      <img src="/images/logo/apple.svg" alt="Apple">
+      <img src="/images/logo/ustc-emblem.jpg" alt="University of Science and Technology of China">
     </div>
     <div class="timeline-card">
       <div class="timeline-header">
-        <div class="timeline-role">Software Engineer <span class="timeline-sep">|</span> <span class="timeline-company">Apple Inc.</span></div>
-        <span class="timeline-time">Jan. 2026 - Present</span>
+        <div class="timeline-role">PhD Student <span class="timeline-sep">|</span> <span class="timeline-company">University of Science and Technology of China</span></div>
+        <span class="timeline-time">Sep. 2024 - Present</span>
       </div>
       <div class="timeline-details">
-        Developed AI agent tools for iPhone hardware testing, enhancing automated diagnostics workflows and improving large-scale test efficiency.
+        Department of Modern Mechanics. Supervised by <a href="https://scholar.google.com.hk/citations?hl=zh-CN&user=0IIXHuMAAAAJ">Prof. Yinbo Zhu</a> and <a href="https://scholar.google.com.hk/citations?hl=zh-CN&user=X4lTQbMAAAAJ">Prof. Hengan Wu</a>.
       </div>
     </div>
   </div>
 
-  <div class="timeline-item">
+  <div class="timeline-item timeline-item--hunan">
     <div class="timeline-dot" style="background: #ffffff;">
-      <img src="/images/logo/upenn.svg" alt="UPenn">
+      <img src="/images/logo/hunan-emblem.jpg" alt="Hunan University">
     </div>
     <div class="timeline-card">
       <div class="timeline-header">
-        <div class="timeline-role">Research Assistant <span class="timeline-sep">|</span> <span class="timeline-company">University of Pennsylvania</span></div>
-        <span class="timeline-time">Nov. 2025 - Jan. 2026</span>
+        <div class="timeline-role">BEng Student <span class="timeline-sep">|</span> <span class="timeline-company">Hunan University</span></div>
+        <span class="timeline-time">Sep. 2020 - Jun. 2024</span>
       </div>
       <div class="timeline-details">
-        ViT-driven image geolocation.
-      </div>
-    </div>
-  </div>
-
-  <div class="timeline-item">
-    <div class="timeline-dot" style="background: #ffffff;">
-      <img src="/images/logo/sf.svg" alt="SF Express">
-    </div>
-    <div class="timeline-card">
-      <div class="timeline-header">
-        <div class="timeline-role">Software Engineer <span class="timeline-sep">|</span> <span class="timeline-company">SF Express</span></div>
-        <span class="timeline-time">May. 2025 - Jul. 2025</span>
-      </div>
-      <div class="timeline-details">
-        Delivered microservice modules for the order management system.
-      </div>
-    </div>
-  </div>
-
-  <div class="timeline-item">
-    <div class="timeline-dot" style="background: #ffffff;">
-      <img src="/images/logo/boc.svg" alt="Bank of China">
-    </div>
-    <div class="timeline-card">
-      <div class="timeline-header">
-        <div class="timeline-role">Software Engineer <span class="timeline-sep">|</span> <span class="timeline-company">Bank of China</span></div>
-        <span class="timeline-time">Jul. 2024 - Sep. 2024</span>
-      </div>
-      <div class="timeline-details">
-        Involved in the deployment and fine-tuning of large language models in internal banking systems.
-      </div>
-    </div>
-  </div>
-
-  <div class="timeline-item">
-    <div class="timeline-dot" style="background: #ffffff;">
-      <img src="/images/logo/szu.svg" alt="Shenzhen University">
-    </div>
-    <div class="timeline-card">
-      <div class="timeline-header">
-        <div class="timeline-role">Research Assistant <span class="timeline-sep">|</span> <span class="timeline-company"><a href="https://bdsc.szu.edu.cn/">Big Data Institute, Shenzhen University</a></span></div>
-        <span class="timeline-time">2023 - 2024</span>
-      </div>
-      <div class="timeline-details">
-        Supervised by Distinguished Professor <a href="https://dblp.org/pid/h/JoshuaZhexueHuang.html">Joshua Zhexue Huang</a>. Carried out optimizations on data processing and clustering algorithms by leveraging distributed approximate computing techniques.
+        Department of Engineering Mechanics. Supervised by <em>Prof. Yiru Ren</em>.
       </div>
     </div>
   </div>
@@ -139,10 +94,6 @@ I am a graduate student in the Department of [Electrical and Systems Engineering
 })();
 </script>
 
-If you are interested in any aspect of me, I am always open to discussions and collaborations. Feel free to reach out to me at - siming_deng_stat [at] 163.com
-
-**<font color="#990000">Seeking Software Engineer and Machine Learning roles — AI Infrastructure, Applied AI / Agents, and ML Systems. Feel free to reach out!</font>**
-
 ---
 
 ## Publications
@@ -151,86 +102,52 @@ If you are interested in any aspect of me, I am always open to discussions and c
 
   <div class="publication-card">
     <div class="publication-thumb">
-      <img src="/images/papers/paper1.svg" alt="Innovative covariance-based framework">
-      <a href="https://www.tandfonline.com/doi/abs/10.1080/03610918.2026.2635000" class="publication-overlay" target="_blank" rel="noopener">
+      <img src="/images/papers/acsml.png" alt="Mechanical Amorphization-Mediated Self-Healing of Fractured Diamond">
+      <a href="https://doi.org/10.1021/acsmaterialslett.5c01275" class="publication-overlay" target="_blank" rel="noopener">
         <span>View Paper</span>
       </a>
     </div>
     <div class="publication-info">
       <div class="publication-title">
-        <a href="https://www.tandfonline.com/doi/abs/10.1080/03610918.2026.2635000" target="_blank" rel="noopener">Innovative covariance-based framework: symmetry assessment and exponentiality testing under multiplicative distortion measurement Errors</a>
+        <a href="https://doi.org/10.1021/acsmaterialslett.5c01275" target="_blank" rel="noopener">Mechanical Amorphization-Mediated Self-Healing of Fractured Diamond</a>
       </div>
-      <div class="publication-authors"><strong class="author-highlight">Siming Deng</strong>, Jun Zhang, Jiongtao Zhong</div>
-      <div class="publication-conference"><span class="pub-venue">Communications in Statistics - Simulation and Computation, 2026</span> <a href="https://www.tandfonline.com/doi/abs/10.1080/03610918.2026.2635000" target="_blank">[paper]</a></div>
-      <div class="publication-details">SCI, first author</div>
+      <div class="publication-authors"><strong class="author-highlight">Kang Wang</strong>, HengAn Wu, YinBo Zhu</div>
+      <div class="publication-conference"><span class="pub-venue">ACS Materials Letters, October 2025</span></div>
+      <div class="publication-details">JCR Q1, IF = 8.7</div>
     </div>
   </div>
 
   <div class="publication-card">
     <div class="publication-thumb">
-      <img src="/images/papers/paper2.svg" alt="A New Logarithmic Multiplicative Distortion">
-      <a href="https://onlinelibrary.wiley.com/doi/10.1002/sam.11708" class="publication-overlay" target="_blank" rel="noopener">
+      <img src="/images/papers/acsnano.png" alt="Transformation-Mediated Kinetic Unfreezing in Mixed-Motif Amorphous Carbon">
+      <a href="https://doi.org/10.1021/acsnano.6c10835" class="publication-overlay" target="_blank" rel="noopener">
         <span>View Paper</span>
       </a>
     </div>
     <div class="publication-info">
       <div class="publication-title">
-        <a href="https://onlinelibrary.wiley.com/doi/10.1002/sam.11708" target="_blank" rel="noopener">A New Logarithmic Multiplicative Distortion for Correlation Analysis</a>
+        <a href="https://doi.org/10.1021/acsnano.6c10835" target="_blank" rel="noopener">Transformation-Mediated Kinetic Unfreezing in Mixed-Motif Amorphous Carbon</a>
       </div>
-      <div class="publication-authors"><strong class="author-highlight">Siming Deng</strong>, Jun Zhang</div>
-      <div class="publication-conference"><span class="pub-venue">Statistical Analysis and Data Mining, 2024</span> <a href="https://onlinelibrary.wiley.com/doi/10.1002/sam.11708" target="_blank">[paper]</a></div>
-      <div class="publication-details">SCI, JCR: Q1, first author, Top Cited Article - WILEY 2025</div>
+      <div class="publication-authors"><strong class="author-highlight">Kang Wang</strong>, ZhongTing Zhang, HengAn Wu, YinBo Zhu</div>
+      <div class="publication-conference"><span class="pub-venue">ACS Nano, July 2026</span></div>
+      <div class="publication-details">JCR Q1, IF = 16.1</div>
     </div>
   </div>
 
   <div class="publication-card">
     <div class="publication-thumb">
-      <img src="/images/papers/paper3.svg" alt="A Revisit to Pearson Correlation Coefficient">
-      <a href="https://www.tandfonline.com/doi/full/10.1080/03610918.2024.2333352" class="publication-overlay" target="_blank" rel="noopener">
+      <img src="/images/papers/ijcr.jpg" alt="Energy absorption performance of multi-cell hexagonal tube with hierarchical self-similarity">
+      <a href="https://doi.org/10.1080/13588265.2026.2716950" class="publication-overlay" target="_blank" rel="noopener">
         <span>View Paper</span>
       </a>
     </div>
     <div class="publication-info">
       <div class="publication-title">
-        <a href="https://www.tandfonline.com/doi/full/10.1080/03610918.2024.2333352" target="_blank" rel="noopener">A Revisit to Pearson Correlation Coefficient under Multiplicative Distortions</a>
+        <a href="https://doi.org/10.1080/13588265.2026.2716950" target="_blank" rel="noopener">Energy absorption performance of multi-cell hexagonal tube with hierarchical self-similarity</a>
       </div>
-      <div class="publication-authors"><strong class="author-highlight">Siming Deng</strong>, Jun Zhang, Yingcong Huang, Jiongtao Zhong & Xiaozhen Yang</div>
-      <div class="publication-conference"><span class="pub-venue">Communications in Statistics - Simulation and Computation, 2024</span> <a href="https://www.tandfonline.com/doi/full/10.1080/03610918.2024.2333352" target="_blank">[paper]</a></div>
-      <div class="publication-details">SCI, first author, Highly Cited Paper - Web of Science</div>
-    </div>
-  </div>
-
-  <div class="publication-card">
-    <div class="publication-thumb">
-      <img src="/images/papers/paper4.svg" alt="Covariance Ratio under Multiplicative Distortion">
-      <a href="https://www.tandfonline.com/doi/full/10.1080/03610926.2023.2295240" class="publication-overlay" target="_blank" rel="noopener">
-        <span>View Paper</span>
-      </a>
-    </div>
-    <div class="publication-info">
-      <div class="publication-title">
-        <a href="https://www.tandfonline.com/doi/full/10.1080/03610926.2023.2295240" target="_blank" rel="noopener">Covariance Ratio under Multiplicative Distortion Measurement Errors</a>
-      </div>
-      <div class="publication-authors">Jiongtao Zhong, <strong class="author-highlight">Siming Deng</strong>, Jun Zhang & Zhenghui Feng</div>
-      <div class="publication-conference"><span class="pub-venue">Communications in Statistics - Theory and Methods, 2023</span> <a href="https://www.tandfonline.com/doi/full/10.1080/03610926.2023.2295240" target="_blank">[paper]</a></div>
-      <div class="publication-details">SCI, 2nd-author</div>
-    </div>
-  </div>
-
-  <div class="publication-card">
-    <div class="publication-thumb">
-      <img src="/images/papers/paper5.svg" alt="Estimation of Correlation Coefficient">
-      <a href="https://www.tandfonline.com/doi/full/10.1080/03610926.2023.2288794" class="publication-overlay" target="_blank" rel="noopener">
-        <span>View Paper</span>
-      </a>
-    </div>
-    <div class="publication-info">
-      <div class="publication-title">
-        <a href="https://www.tandfonline.com/doi/full/10.1080/03610926.2023.2288794" target="_blank" rel="noopener">Estimation of Correlation Coefficient with Monotone Transformation and Multiplicative Distortions</a>
-      </div>
-      <div class="publication-authors">Jun Zhang, Xuan Yu, <strong class="author-highlight">Siming Deng</strong>, Jiongtao Zhong, Yisheng Zhou & Bingqing Lin</div>
-      <div class="publication-conference"><span class="pub-venue">Communications in Statistics - Theory and Methods, 2023</span> <a href="https://www.tandfonline.com/doi/full/10.1080/03610926.2023.2288794" target="_blank">[paper]</a></div>
-      <div class="publication-details">SCI, 3rd-author</div>
+      <div class="publication-authors"><strong class="author-highlight">Kang Wang</strong>, YiRu Ren</div>
+      <div class="publication-conference"><span class="pub-venue">International Journal of Crashworthiness, August 2026</span></div>
+      <div class="publication-details">JCR Q3, IF = 1.8</div>
     </div>
   </div>
 
@@ -262,52 +179,55 @@ If you are interested in any aspect of me, I am always open to discussions and c
 
 ## Research Interests
 
-- ML Systems & AI Infrastructure
-- Efficient & On-Device Inference (Apple MLX, SGLang)
-- Agentic AI (multi-agent orchestration & tool use)
-- Machine Learning
-- Nonparametric Statistics
+- Nano Mechanics of Amorphous Carbon
+- Material Structure Design
+- Computational Materials Science
 
-I currently work at the intersection of **AI infrastructure and applied ML**, building agent runtimes and optimizing LLM inference.
-
-Previously, my research centered on **nonparametric statistics** and **measurement-error modeling**, unobservable-variable estimation under multiplicative distortion frameworks, where I developed calibration methods and simulation studies to improve correlation-coefficient estimation in complex industrial settings, resulting in five SCI publications.
-<img src="/images/sunset.jpg">
+My research focuses on the relationship between the structure and mechanical behavior of amorphous carbon, using computational materials science and atomistic simulation to explore material structure design and nano-mechanical mechanisms.
 
 ---
 
 ## News and Updates
 
 <div class="news-grid">
-  <div class="news-card news-card--publication">
-    <div class="news-meta">
-      <span class="news-date">February 2026</span>
-      <span class="news-tag news-tag--publication">Publication</span>
-    </div>
-    <p>First-Author Paper: <a href="https://www.tandfonline.com/doi/abs/10.1080/03610918.2026.2635000"><strong>Innovative covariance-based framework: symmetry assessment and exponentiality testing under multiplicative distortion measurement Errors</strong></a> Now Officially Published in <a href="https://www.tandfonline.com/journals/lssp20">Communications in Statistics - Simulation and Computation</a></p>
-  </div>
-
   <div class="news-card news-card--milestone">
     <div class="news-meta">
-      <span class="news-date">Jan 2026</span>
+      <span class="news-date">September 2026</span>
       <span class="news-tag news-tag--milestone">Milestone</span>
     </div>
-    <p>Excited to have received an offer from Apple!</p>
-  </div>
-
-  <div class="news-card news-card--milestone">
-    <div class="news-meta">
-      <span class="news-date">March 2025</span>
-      <span class="news-tag news-tag--milestone">Milestone</span>
-    </div>
-    <p>Thrilled to have received an offer from UPenn Engineering!</p>
+    <p>Received PhD offer from the University of Science and Technology of China.</p>
   </div>
 
   <div class="news-card news-card--publication">
     <div class="news-meta">
-      <span class="news-date">August 2024</span>
+      <span class="news-date">August 2026</span>
       <span class="news-tag news-tag--publication">Publication</span>
     </div>
-    <p>First-Author Paper: <a href="https://onlinelibrary.wiley.com/doi/10.1002/sam.11708"><strong>A New Logarithmic Multiplicative Distortion for Correlation Analysis</strong></a> Now Officially Published in <a href="https://onlinelibrary.wiley.com/journal/19321872">Statistical Analysis and Data Mining</a> (JCR Q1)</p>
+    <p><strong>Energy absorption performance of multi-cell hexagonal tube with hierarchical self-similarity</strong> published in <em>International Journal of Crashworthiness</em> (JCR IF=1.8).</p>
+  </div>
+
+  <div class="news-card news-card--publication">
+    <div class="news-meta">
+      <span class="news-date">July 2026</span>
+      <span class="news-tag news-tag--publication">Publication</span>
+    </div>
+    <p><strong>Transformation-Mediated Kinetic Unfreezing in Mixed-Motif Amorphous Carbon</strong> published in <em>ACS Nano</em> (JCR IF=16.1).</p>
+  </div>
+
+  <div class="news-card news-card--publication">
+    <div class="news-meta">
+      <span class="news-date">October 2025</span>
+      <span class="news-tag news-tag--publication">Publication</span>
+    </div>
+    <p><strong>Mechanical Amorphization-Mediated Self-Healing of Fractured Diamond</strong> published in <em>ACS Materials Letters</em> (JCR IF=8.7).</p>
+  </div>
+
+  <div class="news-card news-card--milestone">
+    <div class="news-meta">
+      <span class="news-date">September 2024</span>
+      <span class="news-tag news-tag--milestone">Milestone</span>
+    </div>
+    <p>Join to CME Lab, University of Science and Technology of China.</p>
   </div>
 </div>
 

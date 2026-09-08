@@ -7,7 +7,6 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="{% if page.title %}{{ page.title }} &#8211; {% endif %}{{ site.title }}">
 <meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}{{ page.content | strip_html | strip_newlines | truncate: 120 }}{% endif %}">
-{% if site.owner.twitter %}<meta name="twitter:creator" content="@{{ site.owner.twitter }}">{% endif %}
 <meta name="twitter:image" content="{{ site.url }}/images/{{ social_image }}">
 <meta property="og:type" content="website">
 <meta property="og:image" content="{{ site.url }}/images/{{ social_image }}">
@@ -55,14 +54,10 @@
 <!-- For all browsers -->
 <link rel="stylesheet" href="/assets/css/main.css">
 
-<!--[if (lt IE 9) & (!IEMobile)]>
-<link rel="stylesheet" href="/assets/css/ie.css">
-<![endif]-->
-
 <meta http-equiv="cleartype" content="on">
 
 <!-- Load Modernizr -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" integrity="sha512-3n19xznO0ubPpSwYCRRBgHh63DrV+bdZfHK52b1esvId4GsfwStQNPJFjeQos2h3JwCmZl0/LgLxSKMAI55hgw==" crossorigin="anonymous"></script>
 
-<link rel="icon" type="image/png" href="{{ site.url }}/images/fav.png">
-<link rel="apple-touch-icon" href="{{ site.url }}/images/fav.png">
+<link rel="icon" type="image/jpeg" href="{{ site.url }}/images/header-avatar.jpg">
+<link rel="apple-touch-icon" href="{{ site.url }}/images/header-avatar.jpg">
