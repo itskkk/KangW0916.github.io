@@ -1,6 +1,7 @@
 title: Chris Wang
 # Comment out url when working locally to resolve base urls correctly
-url: https://kangw0916.github.io
+url: https://itskkk.github.io
+baseurl: /KangW0916.github.io
 
 # Default social-share preview image. Lives in /images/.
 og_image: header-avatar.jpg

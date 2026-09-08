@@ -4,7 +4,7 @@ layout: page
 
 # About Me
 
-<img src="/images/personal-photo.jpg" class="floatpic">
+<img src="{{ '/images/personal-photo.jpg' | relative_url }}" class="floatpic">
 
 Here is **Chris Wang (王康)**.<br>
 
@@ -17,7 +17,7 @@ I am a PhD student in the [Department of Modern Mechanics](https://ses.ustc.edu.
 
   <div class="timeline-item timeline-item--current timeline-item--ustc">
     <div class="timeline-dot" style="background: #ffffff;">
-      <img src="/images/logo/ustc-emblem.jpg" alt="University of Science and Technology of China">
+      <img src="{{ '/images/logo/ustc-emblem.jpg' | relative_url }}" alt="University of Science and Technology of China">
     </div>
     <div class="timeline-card">
       <div class="timeline-header">
@@ -32,7 +32,7 @@ I am a PhD student in the [Department of Modern Mechanics](https://ses.ustc.edu.
 
   <div class="timeline-item timeline-item--hunan">
     <div class="timeline-dot" style="background: #ffffff;">
-      <img src="/images/logo/hunan-emblem.jpg" alt="Hunan University">
+      <img src="{{ '/images/logo/hunan-emblem.jpg' | relative_url }}" alt="Hunan University">
     </div>
     <div class="timeline-card">
       <div class="timeline-header">
@@ -102,7 +102,7 @@ I am a PhD student in the [Department of Modern Mechanics](https://ses.ustc.edu.
 
   <div class="publication-card">
     <div class="publication-thumb">
-      <img src="/images/papers/acsml.png" alt="Mechanical Amorphization-Mediated Self-Healing of Fractured Diamond">
+      <img src="{{ '/images/papers/acsml.png' | relative_url }}" alt="Mechanical Amorphization-Mediated Self-Healing of Fractured Diamond">
       <a href="https://doi.org/10.1021/acsmaterialslett.5c01275" class="publication-overlay" target="_blank" rel="noopener">
         <span>View Paper</span>
       </a>
@@ -119,7 +119,7 @@ I am a PhD student in the [Department of Modern Mechanics](https://ses.ustc.edu.
 
   <div class="publication-card">
     <div class="publication-thumb">
-      <img src="/images/papers/acsnano.png" alt="Transformation-Mediated Kinetic Unfreezing in Mixed-Motif Amorphous Carbon">
+      <img src="{{ '/images/papers/acsnano.png' | relative_url }}" alt="Transformation-Mediated Kinetic Unfreezing in Mixed-Motif Amorphous Carbon">
       <a href="https://doi.org/10.1021/acsnano.6c10835" class="publication-overlay" target="_blank" rel="noopener">
         <span>View Paper</span>
       </a>
@@ -136,7 +136,7 @@ I am a PhD student in the [Department of Modern Mechanics](https://ses.ustc.edu.
 
   <div class="publication-card">
     <div class="publication-thumb">
-      <img src="/images/papers/ijcr.jpg" alt="Energy absorption performance of multi-cell hexagonal tube with hierarchical self-similarity">
+      <img src="{{ '/images/papers/ijcr.jpg' | relative_url }}" alt="Energy absorption performance of multi-cell hexagonal tube with hierarchical self-similarity">
       <a href="https://doi.org/10.1080/13588265.2026.2716950" class="publication-overlay" target="_blank" rel="noopener">
         <span>View Paper</span>
       </a>

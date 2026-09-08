@@ -553,14 +553,14 @@
         <!-- Mobile avatar with expandable contact menu (mobile portrait only) -->
         <div class="mobile-avatar-wrapper">
           <button class="mobile-avatar-btn" aria-label="Toggle contact info" aria-expanded="false">
-            <img src="{{ site.url }}/images/{{ site.owner.avatar }}"
+            <img src="{{ '/images/' | append: site.owner.avatar | relative_url }}"
                  alt="{{ site.owner.name }}" class="mobile-avatar-img">
           </button>
         </div>
 
         <a class="header-logo" href="{{ '/' | relative_url }}" aria-label="{{ site.owner.name }}">
-          <img src="/images/ustc-logo.png" class="logo logo--light" alt="University of Science and Technology of China">
-          <img src="/images/ustc-logo.png" class="logo logo--dark" alt="University of Science and Technology of China">
+          <img src="{{ '/images/ustc-logo.png' | relative_url }}" class="logo logo--light" alt="University of Science and Technology of China">
+          <img src="{{ '/images/ustc-logo.png' | relative_url }}" class="logo logo--dark" alt="University of Science and Technology of China">
         </a>
 
         <div class="header-actions">
@@ -592,7 +592,7 @@
             </label>
           </div>
           <span class="header-avatar" title="{{ site.owner.name }}">
-            <img src="{{ site.url }}/images/{{ site.owner.avatar }}" alt="{{ site.owner.name }}">
+            <img src="{{ '/images/' | append: site.owner.avatar | relative_url }}" alt="{{ site.owner.name }}">
           </span>
         </div>
       </div>
@@ -613,7 +613,7 @@
 
   <!-- 其他内容保持不变 -->
   {% if page.image.feature %}<div class="image-wrap">
-    <img src="{{ site.url }}/images/{{ page.image.feature }}" alt="{{ page.title }} feature image" itemprop="primaryImageOfPage">
+    <img src="{{ '/images/' | append: page.image.feature | relative_url }}" alt="{{ page.title }} feature image" itemprop="primaryImageOfPage">
   </div>{% endif %}
 
   <div id="main" role="main" itemprop="mainContentOfPage">

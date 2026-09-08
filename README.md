@@ -1,6 +1,6 @@
 # Chris Wang — Personal Academic Homepage
 
-This repository contains the source code for [Chris Wang's personal academic homepage](https://kangw0916.github.io/), built with Jekyll and deployed through GitHub Pages.
+This repository contains the source code for [Chris Wang's personal academic homepage](https://itskkk.github.io/KangW0916.github.io/), built with Jekyll and deployed through GitHub Pages.
 
 ## Pages
 
